@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', function (req, res) {
-  res.send("Hello World")
+  res.sendFile(__dirname + "/index.html")
 })
 //ejemplo de función flecha 
 app.listen(3000, ()=>{ 
